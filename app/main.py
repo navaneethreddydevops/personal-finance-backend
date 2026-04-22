@@ -6,6 +6,7 @@ from typing import Any
 from alembic.config import Config
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
 
 from alembic import command
 from app.api.v1.router import router as v1_router
@@ -49,6 +50,10 @@ def create_app() -> FastAPI:
     )
 
     app.include_router(v1_router)
+
+    @app.get("/", include_in_schema=False)
+    def root() -> RedirectResponse:
+        return RedirectResponse(url="/api/docs")
 
     @app.get("/health", tags=["health"])
     def health() -> dict[str, Any]:

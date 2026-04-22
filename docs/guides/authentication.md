@@ -62,6 +62,10 @@ curl http://localhost:8000/api/v1/auth/me \
   -H "Authorization: Bearer <access_token>"
 ```
 
+## Using Swagger UI
+
+Navigate to `http://localhost:8000/api/docs`, click the **Authorize** button (lock icon in the top-right), paste your `access_token`, and click **Authorize**. All subsequent requests from the UI will include the Bearer header automatically.
+
 ## Token Details
 
 | Property | Value |
