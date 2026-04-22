@@ -550,6 +550,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#using-swagger-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Swagger UI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#token-details" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -874,6 +885,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#using-swagger-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Swagger UI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#token-details" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -952,6 +974,8 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl<span class="w"> </span>http://localhost:8000/api/v1/auth/me<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer &lt;access_token&gt;&quot;</span>
 </code></pre></div>
+<h2 id="using-swagger-ui">Using Swagger UI</h2>
+<p>Navigate to <code>http://localhost:8000/api/docs</code>, click the <strong>Authorize</strong> button (lock icon in the top-right), paste your <code>access_token</code>, and click <strong>Authorize</strong>. All subsequent requests from the UI will include the Bearer header automatically.</p>
 <h2 id="token-details">Token Details</h2>
 <table>
 <thead>
